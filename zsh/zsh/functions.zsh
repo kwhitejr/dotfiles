@@ -30,3 +30,15 @@ codi() {
     hi NonText ctermfg=0 |\
     Codi $syntax"
 }
+
+# CLI for Visual Studio
+code() {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        local argPath="$1"
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}

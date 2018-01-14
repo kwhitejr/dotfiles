@@ -1,6 +1,9 @@
 # reload zsh config
 alias reload!='source ~/.zshrc'
 
+# Open Sublime
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+
 # Switch vim to neovim
 alias vim="nvim"
 alias ":q"="exit"
@@ -27,7 +30,7 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && 
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 # Start meteor with settings
-alias meteors="meteor --settings ./config/settings.json"
+# alias meteors="meteor --settings ./config/settings.json"
 
 # File size
 alias fs="stat -f \"%z bytes\""
