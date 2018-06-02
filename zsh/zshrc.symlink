@@ -32,3 +32,5 @@ for config ($DOTFILES/zsh/zsh/*.zsh) source $config
 if [[ -a ~/.localrc ]]; then
   source ~/.localrc
 fi
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"

@@ -76,3 +76,6 @@
 
 [mergetool]
 	keepBackup = true
+[user]
+	email = Kevin.White@nike.com
+	name = White, Kevin (ETW - FLEX)
