@@ -42,3 +42,6 @@ code() {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+# Auto-complete for kubectl
+if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi

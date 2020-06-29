@@ -70,6 +70,7 @@
 
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	conflictstyle = diff3
 
 [push]
 	default = simple
@@ -77,5 +78,5 @@
 [mergetool]
 	keepBackup = true
 [user]
-	email = Kevin.White@nike.com
-	name = White, Kevin (ETW - FLEX)
+	email = kevin.white@nike.com
+	name = White, Kevin

@@ -49,3 +49,9 @@ alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 
 # Android
 alias android="open -a /Applications/Android\ Studio.app ."
+
+# Credentials
+alias gimme-aws-creds="docker run -it --rm \
+  -v ~/.aws/credentials:/root/.aws/credentials \
+  -v ~/.okta_aws_login_config:/root/.okta_aws_login_config \
+  gimme-aws-creds"

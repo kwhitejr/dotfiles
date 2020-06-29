@@ -1,4 +1,5 @@
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+USER_BASE_PATH=$(python -m site --user-base)
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$USER_BASE_PATH/bin"
 
 # Language Support
 export LC_CTYPE=en_US.UTF-8
@@ -21,3 +22,5 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_COMMAND="ag -g ''"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Python installation
+# export PATH=/usr/local/share/python:$PATH
